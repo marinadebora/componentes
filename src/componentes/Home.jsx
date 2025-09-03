@@ -1,6 +1,5 @@
 import { useState } from 'react'
-import './App.css'
-import Modal from './componentes/Modal'
+import Modal from './Modal'
 
 const Home = () =>
 {
@@ -12,13 +11,14 @@ const Home = () =>
   }
   
   return (
-    <div onClick={modalOPenClose}>
-      abrir
+    <div className='w-[6rem] h-[6rem] border flex items-center justify-center cursor-pointer' onClick={modalOPenClose}>
+      <p>Abrir modal</p>
       {
         modalAccion && (
+          /* ajusta el modal dando el tamaño que desees como tambien los colores */
           <Modal onClose={modalOPenClose}>
-            <div>
-              hola soy un modal
+            <div className='w-full h-full flex items-star justify-star'>
+              <p className='border border-blue-300 p-2'>hola soy un modal 🖐🏼 puedes cerrarme haciendo clic dentro del cuadro rojo <br /> si mi contenido es muy grande evalua poner la funcion en este div <br /> para poder cerrar desde cualquier parte</p>
             </div>
           </Modal>
         )
