@@ -9,7 +9,7 @@ const Home = () =>
     setModalAccion(!modalAccion);
     console.log(modalAccion)
   }
-  
+
   return (
     <div className='w-[6rem] h-[6rem] border flex items-center justify-center cursor-pointer' onClick={modalOPenClose}>
       <p>Abrir modal</p>
